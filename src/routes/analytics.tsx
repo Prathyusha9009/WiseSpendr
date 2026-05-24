@@ -98,12 +98,12 @@ function AnalyticsPage() {
     <AppShell title="Analytics">
       <div className="space-y-6">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <StatCard icon={TrendingUp} label="Total expenses" value={`$${total.toFixed(2)}`} hint={`${expenses.length} transactions`} />
+          <StatCard icon={TrendingUp} label="Total expenses" value={`₹${total.toFixed(2)}`} hint={`${expenses.length} transactions`} />
           <StatCard
             icon={Trophy}
             label="Top category"
             value={topCategory ? topCategory.name : "—"}
-            hint={topCategory ? `$${topCategory.value.toFixed(2)}` : "No data yet"}
+            hint={topCategory ? `₹${topCategory.value.toFixed(2)}` : "No data yet"}
           />
           <StatCard icon={CalendarDays} label="This month" value={`$${monthTotal.toFixed(2)}`} />
         </div>
@@ -135,7 +135,7 @@ function AnalyticsPage() {
                     </Pie>
                     <Tooltip
                       contentStyle={{ background: "hsl(var(--card))", border: "1px solid hsl(var(--border))", borderRadius: 8 }}
-                      formatter={(v: number) => `$${v.toFixed(2)}`}
+                      formatter={(v: number) => `₹${v.toFixed(2)}`}
                     />
                     <Legend />
                   </PieChart>
@@ -153,7 +153,7 @@ function AnalyticsPage() {
                     <YAxis stroke="hsl(var(--muted-foreground))" fontSize={12} />
                     <Tooltip
                       contentStyle={{ background: "hsl(var(--card))", border: "1px solid hsl(var(--border))", borderRadius: 8 }}
-                      formatter={(v: number) => `$${v.toFixed(2)}`}
+                      formatter={(v: number) => `₹${v.toFixed(2)}`}
                     />
                     <Line
                       type="monotone"

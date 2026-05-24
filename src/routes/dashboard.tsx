@@ -121,9 +121,9 @@ function Dashboard() {
     <AppShell title="Dashboard">
       <div className="space-y-6">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <StatCard icon={TrendingUp} label="Total spending" value={`$${total.toFixed(2)}`} hint={`${expenses.length} transactions`} />
-          <StatCard icon={CalendarDays} label="This month" value={`$${monthTotal.toFixed(2)}`} />
-          <StatCard icon={Receipt} label="Avg / transaction" value={`$${expenses.length ? (total / expenses.length).toFixed(2) : "0.00"}`} />
+          <StatCard icon={TrendingUp} label="Total spending" value={`₹${total.toFixed(2)}`} hint={`${expenses.length} transactions`} />
+          <StatCard icon={CalendarDays} label="This month" value={`₹${monthTotal.toFixed(2)}`} />
+          <StatCard icon={Receipt} label="Avg / transaction" value={`₹${expenses.length ? (total / expenses.length).toFixed(2) : "0.00"}`} />
         </div>
 
         <div className="grid gap-6 lg:grid-cols-5">
@@ -174,7 +174,7 @@ function Dashboard() {
                       </p>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="font-semibold tabular-nums">${Number(e.amount).toFixed(2)}</span>
+                      <span className="font-semibold tabular-nums">₹{Number(e.amount).toFixed(2)}</span>
                       <Button variant="ghost" size="icon" onClick={() => handleDelete(e.id)} aria-label="Delete">
                         <Trash2 className="h-4 w-4 text-muted-foreground hover:text-destructive" />
                       </Button>

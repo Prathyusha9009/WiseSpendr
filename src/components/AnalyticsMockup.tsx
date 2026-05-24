@@ -26,10 +26,10 @@ export function AnalyticsMockup() {
         {/* Key stat */}
         <div className="mt-5">
           <p className="text-xs text-muted-foreground">Total spent</p>
-          <p className="mt-1 font-display text-4xl font-bold tracking-tight">$2,184.50</p>
+          <p className="mt-1 font-display text-4xl font-bold tracking-tight">₹2,184.50</p>
           <div className="mt-2 flex items-center gap-2 text-xs text-muted-foreground">
             <TrendingUp className="h-3.5 w-3.5 text-primary" />
-            <span><span className="font-medium text-foreground">62%</span> of $3,500 monthly budget used</span>
+            <span><span className="font-medium text-foreground">62%</span> of ₹3,500 monthly budget used</span>
           </div>
         </div>
 
@@ -71,9 +71,9 @@ export function AnalyticsMockup() {
         {/* Category bars */}
         <div className="mt-4 grid grid-cols-3 gap-3">
           {[
-            { label: "Food", amt: "$640", pct: 80, tone: "bg-gradient-primary" },
-            { label: "Travel", amt: "$420", pct: 55, tone: "bg-primary/70" },
-            { label: "Bills", amt: "$310", pct: 38, tone: "bg-primary/40" },
+            { label: "Food", amt: "₹640", pct: 80, tone: "bg-gradient-primary" },
+            { label: "Travel", amt: "₹420", pct: 55, tone: "bg-primary/70" },
+            { label: "Bills", amt: "₹310", pct: 38, tone: "bg-primary/40" },
           ].map((c) => (
             <div key={c.label} className="rounded-xl border border-border bg-surface p-3">
               <p className="text-[11px] text-muted-foreground">{c.label}</p>
@@ -94,7 +94,7 @@ export function AnalyticsMockup() {
           </div>
           <div>
             <p className="text-[11px] text-muted-foreground">AI insight</p>
-            <p className="text-xs font-semibold">Save $96 on dining</p>
+            <p className="text-xs font-semibold">Save ₹96 on dining</p>
           </div>
         </div>
       </div>

@@ -143,7 +143,7 @@ function BudgetPage() {
     }
   };
 
-  const fmt = (n: number) => `$${n.toFixed(2)}`;
+  const fmt = (n: number) => `₹${n.toFixed(2)}`;
 
   return (
     <AppShell title="Budget Tracking">

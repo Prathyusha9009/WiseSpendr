@@ -27,10 +27,10 @@ export function PhoneMockup() {
             {/* Balance card */}
             <div className="rounded-2xl bg-gradient-primary p-5 text-primary-foreground shadow-glow">
               <p className="text-xs opacity-80">Total balance</p>
-              <p className="mt-1 font-display text-3xl font-bold tracking-tight">$12,480.50</p>
+              <p className="mt-1 font-display text-3xl font-bold tracking-tight">₹12,480.50</p>
               <div className="mt-4 flex items-center justify-between text-xs">
-                <div className="flex items-center gap-1.5"><ArrowDownLeft className="h-3.5 w-3.5" /> Income $4,200</div>
-                <div className="flex items-center gap-1.5"><ArrowUpRight className="h-3.5 w-3.5" /> Spent $1,820</div>
+                <div className="flex items-center gap-1.5"><ArrowDownLeft className="h-3.5 w-3.5" /> Income ₹4,200</div>
+                <div className="flex items-center gap-1.5"><ArrowUpRight className="h-3.5 w-3.5" /> Spent ₹1,820</div>
               </div>
             </div>
 
@@ -55,9 +55,9 @@ export function PhoneMockup() {
             {/* Transactions */}
             <div className="space-y-2">
               {[
-                { icon: Coffee, name: "Blue Bottle", cat: "Coffee", amt: "-$6.40" },
-                { icon: ShoppingBag, name: "Whole Foods", cat: "Groceries", amt: "-$84.20" },
-                { icon: Zap, name: "Salary", cat: "Income", amt: "+$3,200", income: true },
+                { icon: Coffee, name: "Blue Bottle", cat: "Coffee", amt: "-₹6.40" },
+                { icon: ShoppingBag, name: "Whole Foods", cat: "Groceries", amt: "-₹84.20" },
+                { icon: Zap, name: "Salary", cat: "Income", amt: "+₹3,200", income: true },
               ].map((t, i) => (
                 <div key={i} className="flex items-center gap-3 rounded-xl bg-secondary/60 p-2.5">
                   <div className={`flex h-9 w-9 items-center justify-center rounded-lg ${t.income ? "bg-primary/15 text-primary" : "bg-background text-foreground"}`}>
@@ -78,7 +78,7 @@ export function PhoneMockup() {
       {/* Floating badge */}
       <div className="absolute -left-6 top-32 hidden rounded-2xl border border-border bg-card p-3 shadow-card sm:block">
         <p className="text-[10px] font-medium text-muted-foreground">Saved this month</p>
-        <p className="font-display text-lg font-bold text-primary">+$840</p>
+        <p className="font-display text-lg font-bold text-primary">+₹840</p>
       </div>
       <div className="absolute -right-4 bottom-24 hidden rounded-2xl border border-border bg-card px-3 py-2 shadow-card sm:block">
         <div className="flex items-center gap-2">

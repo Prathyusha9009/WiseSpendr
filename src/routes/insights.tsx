@@ -88,7 +88,7 @@ function InsightsPage() {
     })();
   }, [user]);
 
-  const fmt = (n: number) => `$${n.toFixed(2)}`;
+  const fmt = (n: number) => `₹${n.toFixed(2)}`;
 
   const insights = useMemo<Insight[]>(() => {
     const now = new Date();

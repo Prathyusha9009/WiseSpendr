@@ -60,9 +60,9 @@ export function DashboardPreview() {
             {/* Stat cards */}
             <div className="mt-5 grid grid-cols-3 gap-3">
               {[
-                { label: "Total spent", value: "$2,184", trend: "+8.2%" },
-                { label: "Budget left", value: "$1,316", trend: "38%" },
-                { label: "Top category", value: "Food", trend: "$640" },
+                { label: "Total spent", value: "₹2,184", trend: "+8.2%" },
+                { label: "Budget left", value: "₹1,316", trend: "38%" },
+                { label: "Top category", value: "Food", trend: "₹640" },
               ].map((s) => (
                 <div key={s.label} className="rounded-xl border border-border bg-surface p-3">
                   <p className="text-[11px] text-muted-foreground">{s.label}</p>
@@ -116,7 +116,7 @@ export function DashboardPreview() {
               <div className="col-span-3 rounded-xl border border-border bg-surface p-4">
                 <div className="flex items-center justify-between">
                   <p className="text-xs font-medium">Budget usage</p>
-                  <p className="text-[11px] text-muted-foreground">62% of $3,500</p>
+                  <p className="text-[11px] text-muted-foreground">62% of ₹3,500</p>
                 </div>
                 <div className="mt-3 h-2 w-full overflow-hidden rounded-full bg-secondary">
                   <div className="h-full rounded-full bg-gradient-primary" style={{ width: "62%" }} />
@@ -128,7 +128,7 @@ export function DashboardPreview() {
                   <p className="text-xs font-semibold">AI suggestion</p>
                 </div>
                 <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground">
-                  Reduce dining by 15% to save ~$96 this month.
+                  Reduce dining by 15% to save ~₹96 this month.
                 </p>
               </div>
             </div>
