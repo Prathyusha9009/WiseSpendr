@@ -75,5 +75,4 @@ The platform provides a clean and intuitive interface for monitoring personal fi
 ## ⭐ Project Status
 
 Active Development 🚀
-
 WiseSpendr continues to evolve with new analytics, budgeting, and AI-powered financial management features.
