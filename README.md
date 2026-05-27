@@ -62,7 +62,7 @@ The platform provides a clean and intuitive interface for monitoring personal fi
 ### Version Control
 - Git
 - GitHub
-- 
+  
 ## 🔮 Future Enhancements
 
 - Gemini AI-powered financial assistant
